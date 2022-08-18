@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Functional Calculater</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="calculatorBody">
+        <table id="myResult">
+            <tr class="monitor">
+                <td colspan="5">
+                    <input type="text" id="MyResult">
+                </td>
+            </tr>
+            <div class="calculater_key">
+                <tr>
+                    <td class="calculatorKeyes"><input type="button" value="C" onclick="deleteMe()"></td>
+                    <td class="calculatorKeyes"><input type="button" value="(" onclick="calculator('(')"></td>
+                    <td class="calculatorKeyes"><input type="button" value=")" onclick="calculator(')')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="%" onclick="calculator('%')"></td>
+                </tr>
+                <tr>
+                    <td class="calculatorKeyes"><input type="button" value="7" onclick="calculator('7')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="8" onclick="calculator('8')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="9" onclick="calculator('9')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="+" onclick="calculator('+')"></td>
+                </tr>
+                <tr>
+                    <td class="calculatorKeyes"><input type="button" value="4" onclick="calculator('4')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="5" onclick="calculator('5')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="6" onclick="calculator('6')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="-" onclick="calculator('-')"></td>
+                </tr>
+                <tr>
+                    <td class="calculatorKeyes"><input type="button" value="1" onclick="calculator('1')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="2" onclick="calculator('2')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="3" onclick="calculator('3')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="*" onclick="calculator('*')"></td>
+                </tr>
+                <tr>
+                    <td class="calculatorKeyes"><input type="button" value="0" onclick="calculator('0')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="." onclick="calculator('.')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="/" onclick="calculator('/')"></td>
+                    <td class="calculatorKeyes"><input type="button" value="=" onclick="answer()"></td>
+                </tr>
+            </div>
+        </table>
+    </div>
+
+    <!-- ================ js file ============== -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
